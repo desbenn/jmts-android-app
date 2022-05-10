@@ -37,7 +37,6 @@ public class Job {
         return "Job{" +
                 " jid=" + jid +
                 ", jobNumber=" + jobNumber +
-
                 ", dateSubmitted=" + dateSubmitted +
                 '}';
     }
