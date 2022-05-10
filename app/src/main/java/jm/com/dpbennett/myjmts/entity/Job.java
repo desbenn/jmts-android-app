@@ -36,7 +36,7 @@ public class Job {
     public String toString() {
         return "Job{" +
                 " jid=" + jid +
-                ", jobNumber='" + jobNumber + '\'' +
+                ", jobNumber=" + jobNumber +
                 ", dateSubmitted=" + dateSubmitted +
                 '}';
     }
