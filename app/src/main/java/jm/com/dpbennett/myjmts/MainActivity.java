@@ -3,7 +3,6 @@ package jm.com.dpbennett.myjmts;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 // tk
                 Job job = new Job();
                 job.jobNumber = "455";

@@ -10,13 +10,13 @@ import java.util.List;
 
 @Dao
 public interface JobDAO {
-    @Query("SELECT * FROM job")
+    @Query("SELECT * FROM Job")
     List<Job> getAll();
 
-    @Query("SELECT * FROM job WHERE jid IN (:jobIds)")
+    @Query("SELECT * FROM Job WHERE jid IN (:jobIds)")
     List<Job> loadAllByIds(long[] jobIds);
 
-    @Query("SELECT * FROM job WHERE job_number LIKE :jobNumber LIMIT 1")
+    @Query("SELECT * FROM Job WHERE job_number LIKE :jobNumber LIMIT 1")
     Job findByJobNumber(String jobNumber);
 
     @Insert
